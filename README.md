@@ -8,7 +8,7 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 🔗 [View Live on Vercel](https://wall-calendar-bice.vercel.app/)
 
-[Watch Video Walkthrough](https://drive.google.com/file/d/1GaNrjTx-SmFB3oMGaJ-vxLEiy8sottrW/view?usp=drive_link)
+[Watch Video Walkthrough](https://drive.google.com/file/d/1uWUz9JSEvxsTbUyoLQrgkVmYjBJ5veG8/view?usp=drive_link)
 
 ---
 
