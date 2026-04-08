@@ -132,8 +132,9 @@ npm run build
 npm start
 
 ##  Author
+```
 
 **Your Name**
-- GitHub: [@Vikash](https://github.com/Gitvikashyadav)
+
+- GitHub: [Vikash](https://github.com/Gitvikashyadav)
 - LinkedIn: [linkedin.com/in/Vikash](https://www.linkedin.com/in/vikashrj/)
-```
