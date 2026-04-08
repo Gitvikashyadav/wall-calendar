@@ -1,4 +1,4 @@
-#  Wall Calendar Component
+# Wall Calendar Component
 
 A beautifully crafted interactive wall calendar built with **Next.js**, **TypeScript**, and pure inline styles — no UI libraries, no CSS frameworks. Designed to feel like a real physical wall calendar on your screen.
 
@@ -12,7 +12,7 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 ---
 
-## Preview
+## Preview Image
 
 [Calendar Preview](https://drive.google.com/file/d/1s83-3S_cVS0A1lZ1z3HiBerSI6dtVSzU/view?usp=drive_link)
 
@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-##  Features
+## Features
 
 | Feature                 | Description                                                                                       |
 | ----------------------- | ------------------------------------------------------------------------------------------------- |
@@ -136,5 +136,5 @@ npm start
 
 **Your Name**
 
-- GitHub: [Vikash](https://github.com/Gitvikashyadav)
+- GitHub: [Github.com/in/Vikash](https://github.com/Gitvikashyadav)
 - LinkedIn: [linkedin.com/in/Vikash](https://www.linkedin.com/in/vikashrj/)
