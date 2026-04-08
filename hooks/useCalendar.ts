@@ -39,15 +39,6 @@ export function useCalendar() {
     }
   }
 
-  // function addNote(text: string, dateKey?: string) {
-  //   const key =
-  //     dateKey ?? `${currentDate.getFullYear()}-${currentDate.getMonth()}`;
-  //   setNotes((prev) => [
-  //     ...prev,
-  //     { id: Date.now().toString(), date: key, text },
-  //   ]);
-  // }
-
   function addNote(text: string, dateKey?: string) {
     const key = dateKey ?? new Date().toISOString().split("T")[0];
     setNotes((prev) => {

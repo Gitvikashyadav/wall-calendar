@@ -23,14 +23,7 @@ export default function WallCalendar() {
   const [modalText, setModalText] = useState("");
 
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  // function onDayClick(date: Date) {
-  //   handleDayClick(date);
-  //   const key = date.toISOString().split("T")[0];
-  //   setModalText(notes.find((n) => n.date === key)?.text || "");
-  //   setModal({ key, date });
-  //   const fest = getFestival(date.getMonth(), date.getDate());
-  //   if (fest) spawnConfetti();
-  // }
+
   function onDayClick(date: Date) {
     handleDayClick(date);
     setSelectedDate(date); // ← ADD THIS
@@ -105,12 +98,6 @@ export default function WallCalendar() {
         <div
           style={{ display: "flex", flexDirection: "row", background: "#fff" }}
         >
-          {/* <NotesPanel
-            onSave={addNote}
-            notes={notes}
-            month={currentDate.getMonth()}
-            year={currentDate.getFullYear()}
-          /> */}
           <NotesPanel
             onSave={addNote}
             notes={notes} // ← ADD
