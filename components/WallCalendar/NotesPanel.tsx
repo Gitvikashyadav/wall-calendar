@@ -83,7 +83,7 @@ export default function NotesPanel({
                 height: `${LINE_HEIGHT}px`,
                 lineHeight: `${LINE_HEIGHT}px`,
                 fontSize: "9px",
-                color: "#6b7280",
+                color: "#585858ff",
                 whiteSpace: "nowrap",
                 overflow: "hidden",
                 textOverflow: "ellipsis",
