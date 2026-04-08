@@ -12,7 +12,7 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 ---
 
-## 📸 Preview
+## Preview
 
 ![Calendar Preview](./public/preview.png)
 
@@ -59,7 +59,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/
@@ -86,7 +86,7 @@ src/
 
 ---
 
-## 🧠 Architecture & Design Decisions
+## Architecture & Design Decisions
 
 ### State Management
 
@@ -100,7 +100,8 @@ useCalendar.ts
 ├── canGoPrev       → prevents navigating before current month
 └── addNote()       → upserts a note by date key (YYYY-MM-DD)
 ```
-## 🧪 How to Test Key Features
+
+## How to Test Key Features
 
 **Notes:**
 
@@ -123,3 +124,16 @@ useCalendar.ts
 
 1. Click **next** to go forward — hero image crossfades smoothly
 2. Click **prev** — disabled on the current month (cannot go to past)
+
+## Build for Production
+
+```bash
+npm run build
+npm start
+
+##  Author
+
+**Your Name**
+- GitHub: [@Vikash](https://github.com/Gitvikashyadav)
+- LinkedIn: [linkedin.com/in/Vikash](https://www.linkedin.com/in/vikashrj/)
+```
