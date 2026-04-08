@@ -14,7 +14,7 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 ## Preview
 
-![Calendar Preview](https://drive.google.com/file/d/1s83-3S_cVS0A1lZ1z3HiBerSI6dtVSzU/view?usp=drive_link)
+[Calendar Preview](https://drive.google.com/file/d/1s83-3S_cVS0A1lZ1z3HiBerSI6dtVSzU/view?usp=drive_link)
 
 ---
 
