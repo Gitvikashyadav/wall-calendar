@@ -6,7 +6,7 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 ## ✨ Live Demo
 
-🔗 [View Live on Vercel](https://your-vercel-link.vercel.app)
+🔗 [View Live on Vercel](https://wall-calendar-bice.vercel.app/)
 
 [Watch Video Walkthrough](https://loom.com/your-video-link)
 
@@ -134,7 +134,7 @@ npm start
 ##  Author
 ```
 
-**Your Name**
+**Vikash Kumar**
 
 - GitHub: [Github.com/in/Vikash](https://github.com/Gitvikashyadav)
 - LinkedIn: [linkedin.com/in/Vikash](https://www.linkedin.com/in/vikashrj/)
