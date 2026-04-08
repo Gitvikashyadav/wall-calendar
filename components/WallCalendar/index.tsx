@@ -27,7 +27,7 @@ export default function WallCalendar() {
   function onDayClick(date: Date) {
     handleDayClick(date);
     setSelectedDate(date); // ← ADD THIS
-    const key = date.toISOString().split("T")[0];
+    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
     setModalText(notes.find((n) => n.date === key)?.text || "");
     setModal({ key, date });
     const fest = getFestival(date.getMonth(), date.getDate());
