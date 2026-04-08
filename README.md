@@ -61,25 +61,28 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🏗️ Project Structure
 
+```
+src/
 ├── app/
-│ └── page.tsx # Root page
+│   └── page.tsx                  # Root page
 │
 ├── components/
-│ └── WallCalendar/
-│ ├── index.tsx # Main calendar container + modal logic
-│ ├── HeroImage.tsx # Month image with crossfade transition
-│ ├── MonthHeader.tsx # Month + year banner with geometric design
-│ ├── CalendarGrid.tsx # Day grid, hover tooltips, date range
-│ ├── NotesPanel.tsx # Left panel — displays saved notes on ruled lines
-│ └── types.ts # Shared TypeScript types
+│   └── WallCalendar/
+│       ├── index.tsx             # Main calendar container + modal logic
+│       ├── HeroImage.tsx         # Month image with crossfade transition
+│       ├── MonthHeader.tsx       # Month + year banner with geometric design
+│       ├── CalendarGrid.tsx      # Day grid, hover tooltips, date range
+│       ├── NotesPanel.tsx        # Left panel — displays saved notes on ruled lines
+│       └── types.ts              # Shared TypeScript types
 │
 ├── hooks/
-│ └── useCalendar.ts # All calendar state — notes, navigation, range
+│   └── useCalendar.ts            # All calendar state — notes, navigation, range
 │
 └── lib/
-├── calendarUtils.ts # getDaysInMonth, getFirstDayOfMonth, isSameDay
-├── festivals.ts # Festival dates + colors map
-└── monthImages.ts # Unsplash mountain images per month
+    ├── calendarUtils.ts          # getDaysInMonth, getFirstDayOfMonth, isSameDay
+    ├── festivals.ts              # Festival dates + colors map
+    └── monthImages.ts            # Unsplash mountain images per month
+```
 
 ---
 
@@ -88,13 +91,15 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ### State Management
 
 All state lives in a single custom hook `useCalendar.ts`. This keeps `index.tsx` clean and makes the logic fully testable in isolation. No external state library (Redux/Zustand) was needed — React's built-in `useState` is sufficient for this scope.
-useCalendar.ts
-├── currentDate → which month is displayed
-├── range → selected start/end date range
-├── notes[] → array of { id, date, text }
-├── canGoPrev → prevents navigating before current month
-└── addNote() → upserts a note by date key (YYYY-MM-DD)
 
+```
+useCalendar.ts
+├── currentDate     → which month is displayed
+├── range           → selected start/end date range
+├── notes[]         → array of { id, date, text }
+├── canGoPrev       → prevents navigating before current month
+└── addNote()       → upserts a note by date key (YYYY-MM-DD)
+```
 ## 🧪 How to Test Key Features
 
 **Notes:**
