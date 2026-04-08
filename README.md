@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗓️ Wall Calendar Component
 
-## Getting Started
+A beautifully crafted interactive wall calendar built with **Next.js**, **TypeScript**, and pure inline styles — no UI libraries, no CSS frameworks. Designed to feel like a real physical wall calendar on your screen.
 
-First, run the development server:
+---
+
+## ✨ Live Demo
+
+🔗 [View Live on Vercel](https://your-vercel-link.vercel.app)
+
+📹 [Watch Video Walkthrough](https://loom.com/your-video-link)
+
+---
+
+## 📸 Preview
+
+![Calendar Preview](./public/preview.png)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js `18+`
+- npm or yarn
+
+### Installation
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/wall-calendar.git
+
+# 2. Navigate into the project
+cd wall-calendar
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Features
 
-## Learn More
+| Feature | Description |
+|---|---|
+| 📅 Month Navigation | Navigate forward/backward through months with prev/next buttons |
+| 🖼️ Hero Image | Each month displays a unique full-width mountain landscape photo with smooth crossfade transition |
+| 📝 Notes | Click any date to open a modal and write a note — saved notes appear in the left panel lined area |
+| 🎉 Festival Tooltips | Hover over any festival date to see the festival name — disappears when you move away |
+| 📆 Date Range Selection | Click two dates to highlight a range across the calendar grid |
+| 🔒 No Past Navigation | Cannot navigate before the current month |
+| 📱 Responsive Design | Adapts gracefully from mobile to desktop |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏗️ Project Structure
