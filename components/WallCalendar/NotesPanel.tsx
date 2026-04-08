@@ -55,7 +55,7 @@ export default function NotesPanel({
       <p
         style={{
           fontSize: "10px",
-          color: "#9ca3af",
+          color: "#888b92ff",
           marginBottom: "6px",
           fontWeight: 500,
         }}

@@ -8,13 +8,13 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 🔗 [View Live on Vercel](https://wall-calendar-bice.vercel.app/)
 
-[Watch Video Walkthrough](https://loom.com/your-video-link)
+[Watch Video Walkthrough](https://drive.google.com/file/d/1GaNrjTx-SmFB3oMGaJ-vxLEiy8sottrW/view?usp=drive_link)
 
 ---
 
 ## Preview Image
 
-[Calendar Preview](https://drive.google.com/file/d/1s83-3S_cVS0A1lZ1z3HiBerSI6dtVSzU/view?usp=drive_link)
+[Calendar Preview](https://drive.google.com/file/d/1dhKrhuxB3IBZpYGva7nNC75YasVwXhU8/view?usp=drive_link)
 
 ---
 
