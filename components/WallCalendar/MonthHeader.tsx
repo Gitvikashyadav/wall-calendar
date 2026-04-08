@@ -1,99 +1,67 @@
-"use client";
-import { Note } from "@/components/WallCalendar/types";
-
-const MONTHS = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-
-export default function NotesPanel({
-  onSave,
-  selectedDate,
-  notes,
-  month,
-  year,
-}: {
-  onSave: (text: string, dateKey?: string) => void;
-  selectedDate: Date | null;
-  notes: Note[];
-  month: number;
-  year: number;
-}) {
-  // Filter notes for current month/year only, sorted by day
-  const monthNotes = notes
-    .filter((n) => {
-      const [y, m] = n.date.split("-").map(Number);
-      return y === year && m - 1 === month;
-    })
-    .sort((a, b) => a.date.localeCompare(b.date));
-
-  // Each ruled line is 18px tall — max 6 lines fit in 108px area
-  const LINE_HEIGHT = 18;
-  const MAX_LINES = 6;
-
+import { MONTHS } from "@/lib/calendarUtils";
+export default function MonthHeader({ date }: { date: Date }) {
   return (
     <div
       style={{
-        width: "110px",
-        flexShrink: 0,
-        padding: "8px 8px 8px 10px",
-        borderRight: "1px solid #f3f4f6",
-        display: "flex",
-        flexDirection: "column",
+        position: "relative",
+        width: "100%",
+        height: "80px",
+        marginTop: "-80px",
+        zIndex: 10,
       }}
     >
-      <p
+      <svg
+        viewBox="0 0 340 80"
+        preserveAspectRatio="none"
         style={{
-          fontSize: "10px",
-          color: "#9ca3af",
-          marginBottom: "6px",
-          fontWeight: 500,
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
         }}
       >
-        Notes
-      </p>
-
-      {/* Lined area — notes displayed as single lines on each rule */}
+        <polygon
+          points="0,80 0,45 120,0 230,80"
+          fill="#29B6F6"
+          opacity="0.95"
+        />
+        <polygon
+          points="0,80 90,20 220,0 340,80"
+          fill="#0277BD"
+          opacity="0.97"
+        />
+      </svg>
       <div
         style={{
-          width: "100%",
-          height: `${LINE_HEIGHT * MAX_LINES}px`,
-          backgroundImage:
-            "repeating-linear-gradient(transparent, transparent 17px, #e5e7eb 17px, #e5e7eb 18px)",
-          overflow: "hidden",
-          position: "relative",
+          position: "absolute",
+          right: "14px",
+          bottom: "10px",
+          textAlign: "right",
+          zIndex: 5,
         }}
       >
-        {monthNotes.slice(0, MAX_LINES).map((note) => {
-          const day = note.date.split("-")[2];
-          return (
-            <div
-              key={note.id}
-              style={{
-                height: `${LINE_HEIGHT}px`,
-                lineHeight: `${LINE_HEIGHT}px`,
-                fontSize: "9px",
-                color: "#6b7280",
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                paddingRight: "2px",
-              }}
-            >
-              {day} {MONTHS[month]}: {note.text}
-            </div>
-          );
-        })}
+        <div
+          style={{
+            color: "#7de4f8",
+            fontSize: "13px",
+            fontWeight: 700,
+            letterSpacing: "0.06em",
+          }}
+        >
+          {date.getFullYear()}
+        </div>
+        <div
+          style={{
+            color: "#fff",
+            fontSize: "22px",
+            fontWeight: 900,
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            textShadow: "0 1px 4px rgba(0,0,0,0.25)",
+          }}
+        >
+          {MONTHS[date.getMonth()]}
+        </div>
       </div>
     </div>
   );
