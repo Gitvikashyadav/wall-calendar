@@ -1,4 +1,4 @@
-# 🗓️ Wall Calendar Component
+#  Wall Calendar Component
 
 A beautifully crafted interactive wall calendar built with **Next.js**, **TypeScript**, and pure inline styles — no UI libraries, no CSS frameworks. Designed to feel like a real physical wall calendar on your screen.
 
@@ -8,17 +8,17 @@ A beautifully crafted interactive wall calendar built with **Next.js**, **TypeSc
 
 🔗 [View Live on Vercel](https://your-vercel-link.vercel.app)
 
-📹 [Watch Video Walkthrough](https://loom.com/your-video-link)
+[Watch Video Walkthrough](https://loom.com/your-video-link)
 
 ---
 
 ## Preview
 
-![Calendar Preview](./public/preview.png)
+![Calendar Preview](https://drive.google.com/file/d/1s83-3S_cVS0A1lZ1z3HiBerSI6dtVSzU/view?usp=drive_link)
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -45,7 +45,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
-## 🧩 Features
+##  Features
 
 | Feature                 | Description                                                                                       |
 | ----------------------- | ------------------------------------------------------------------------------------------------- |
