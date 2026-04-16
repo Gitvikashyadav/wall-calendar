@@ -78,7 +78,7 @@ export default function CalendarGrid({
 
           return (
             <button
-              key={i}
+              key={cell.date.toISOString()}
               onClick={() => onDayClick(cell.date)}
               onMouseEnter={() => setHoveredIndex(i)} // ← set on enter
               onMouseLeave={() => setHoveredIndex(null)} // ← clear on leave
